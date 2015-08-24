@@ -1,0 +1,14 @@
+# Docker config to build a new InaSAFE package each night
+nginx:
+  image: nginx
+  volumes:
+    - ./build:/usr/share/nginx/html:ro
+  ports:
+    - "8999:80"
+  restart: always
+
+cron:
+  build: .
+  volumes:
+    - ./build:/build
+  restart: always
