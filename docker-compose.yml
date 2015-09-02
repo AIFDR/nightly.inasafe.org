@@ -5,7 +5,7 @@ nginx:
     - ./build:/usr/share/nginx/html:ro
   ports:
     - "8999:80"
-  restart: always
+  restart: on-failure:5
 
 cron:
   build: .
@@ -13,4 +13,5 @@ cron:
     - ./build:/build
     # To ensure date / time / tz synced with host
     - /etc/localtime:/etc/localtime:ro
-  restart: always
+  restart: on-failure:5
+
