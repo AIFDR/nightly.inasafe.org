@@ -11,4 +11,6 @@ cron:
   build: .
   volumes:
     - ./build:/build
+    # To ensure date / time / tz synced with host
+    - /etc/localtime:/etc/localtime:ro
   restart: always
