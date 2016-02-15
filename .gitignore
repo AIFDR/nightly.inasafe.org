@@ -1,2 +1,6 @@
 *.*~
 build/*.zip
+build/index.html
+build/plugins.xml
+build/*.exe
+

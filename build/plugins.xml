@@ -11,8 +11,8 @@
         <author_name>Indonesian Government - BNPB, Australian Government - AIFDR and World Bank - GFDRR</author_name>
         <download_url>http://nightly.inasafe.org/inasafe.3.3.0.zip</download_url>
         <uploaded_by>timlinux</uploaded_by>
-        <create_date>Wed Jan 20 20:55:27 SAST 2016</create_date>
-        <update_date>Wed Jan 20 20:55:27 SAST 2016</update_date>
+        <create_date>Mon Feb 15 14:53:09 SAST 2016</create_date>
+        <update_date>Mon Feb 15 14:53:09 SAST 2016</update_date>
         <experimental>True</experimental>
         <deprecated>False</deprecated>
         <tracker>https://github.com/AIFDR/inasafe/issues</tracker>

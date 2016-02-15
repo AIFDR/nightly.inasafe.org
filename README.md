@@ -8,8 +8,21 @@ See https://github.com/AIFDR/inasafe/wiki/Nightly%20Builds
 To manually build:
 
 ```
-docker-compose build
-docker-compose up -d
-docker exec -ti nightlyinasafeorg_cron_1 /bin/bash -c "/build.sh"
+./deploy.sh
+```
+
+# experimental.inasafe.org
+
+Docker scripts for experimental builds at http://experimental.inasafe.org
+
+See https://github.com/inasafe/inasafe/wiki/Experimental-build-repo
+
+
+To manually build:
+
+```
+git branch experimental
+git checkout experimental
+./deploy.sh
 ```
 
