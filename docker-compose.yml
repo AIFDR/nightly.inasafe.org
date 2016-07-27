@@ -4,7 +4,7 @@ nginx:
   volumes:
     - ./build:/usr/share/nginx/html:ro
   ports:
-    - "8999:80"
+    - "8998:80"
   restart: on-failure:5
 
 cron:
