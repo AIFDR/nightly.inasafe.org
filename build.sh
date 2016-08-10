@@ -13,8 +13,8 @@ cat /build/header.html > /build/index.html
 echo "<p class='text-center'>This is the InaSAFE Experimental Build repo last build at : " >> /build/index.html
 date >> /build/index.html
 echo "</p><p class='text-center'>Windows installer <a href='/InaSAFE-${VERSION}-plugin.exe'>InaSAFE-${VERSION}-plugin.exe</a></br>" >> /build/index.html
-echo "</p><p class='text-center'>Plugin repo: http://nightly.inasafe.org/plugins.xml" >> /build/index.html
-echo "</p><p class='text-center'>Usage: <a href='https://github.com/AIFDR/inasafe/wiki/Experimental%20Builds'>instructions</a>" >> /build/index.html
+echo "</p><p class='text-center'>Plugin repo: http://experimental.inasafe.org/plugins.xml" >> /build/index.html
+echo "</p><p class='text-center'>Usage: <a href='https://github.com/AIFDR/inasafe/wiki/Experimental-build-repo'>instructions</a>" >> /build/index.html
 echo "</p><p class='text-center'>Build log: <a href='/log.txt'>View" >> /build/index.html
 echo "</a>" >> /build/index.html
 echo "</p>" >> /build/index.html
