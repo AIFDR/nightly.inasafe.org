@@ -1,10 +1,12 @@
 FROM ubuntu:14.04
 MAINTAINER tim@kartoza.com
 
-RUN apt-get -y update
+ADD build.sh /build.sh
 RUN apt-get -y update
 RUN apt-get -y install git rpl zip make nsis
-RUN git clone git://github.com/AIFDR/inasafe.git
+RUN apt-get -y install python-pip
+RUN pip install git-archive-all pep8
+RUN git clone git://github.com/inasafe/inasafe.git
 
 ADD package-cron /etc/cron.d/package-cron
 RUN chmod +x /etc/cron.d/package-cron
