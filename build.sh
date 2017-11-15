@@ -6,6 +6,13 @@ git fetch >> /tmp/nightly.log
 git clean -df >> /tmp/nightly.log
 git reset --hard origin/develop >> /tmp/nightly.log
 VERSION=`cat metadata.txt | grep ^version | sed 's/version=//g'`
+STATUS=`cat metadata.txt | grep ^status | sed 's/status=//g'`
+
+if [ "${STATUS}" != "final" ]; then
+    VERSION="${VERSION}.${STATUS}"
+fi
+
+echo "Building version: $VERSION"
 scripts/release.sh >> /tmp/nightly.log
 mv /tmp/inasafe.${VERSION}.zip /build
 mv /tmp/InaSAFE-${VERSION}-plugin.exe /build
