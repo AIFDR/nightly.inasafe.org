@@ -1,6 +1,7 @@
 # Docker config to build a new InaSAFE package each night
 nginx:
   image: nginx
+  restart: unless-stopped
   volumes:
     - ./build:/usr/share/nginx/html:ro
   ports:
@@ -9,6 +10,7 @@ nginx:
 
 cron:
   build: .
+  restart: unless-stopped
   volumes:
     - ./build:/build
     # To ensure date / time / tz synced with host
